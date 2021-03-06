@@ -11,6 +11,7 @@ int is_palindrome(listint_t **head)
 {
 	int list[1000];
 	int count = 0, back = 0;
+	int flag = 1;
 
 	while (*head)
 	{
@@ -20,12 +21,12 @@ int is_palindrome(listint_t **head)
 	}
 	count--;
 
-	while (count > back)
+	while (count > back && flag != 0)
 	{
 		if (list[count] != list[back])
-			return (0);
+			flag = 0;
 		count--;
 		back++;
 	}
-	return (1);
+	return (flag);
 }
