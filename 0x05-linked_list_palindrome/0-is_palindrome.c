@@ -9,7 +9,7 @@
 */
 int is_palindrome(listint_t **head)
 {
-	int list[1000];
+	int list[10000];
 	int count = 0, back = 0;
 	int flag = 1;
 
