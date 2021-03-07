@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """utf8 validation"""
 
+
 def validUTF8(data):
     """utf8 validation"""
     nbr_b = 0
