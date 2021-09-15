@@ -1,0 +1,23 @@
+#!/usr/bin/python3
+
+
+def island_result(grid):
+    """island result"""
+
+    result = 0
+    x = len(grid)
+    y = len(grid[0])
+
+    for i in range(x):
+        for j in range(y):
+            if(grid[i][j] == 1):
+                if(i == 0 or grid[i-1][j] == 0):
+                    result = result + 1
+                if(i == x-1 or grid[i+1][j] == 0):
+                    result = result + 1
+                if(j == 0 or grid[i][j-1] == 0):
+                    result = result + 1
+                if(j == y-1 or grid[i][j+1] == 0):
+                    result = result + 1
+
+    return result
