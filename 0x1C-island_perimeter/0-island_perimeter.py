@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-def island_result(grid):
+def island_perimeter(grid):
     """island result"""
 
     result = 0
