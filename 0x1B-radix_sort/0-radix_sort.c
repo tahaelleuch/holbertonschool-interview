@@ -24,7 +24,7 @@ void radix_sort(int *array, size_t size)
 
 	while (min_int / my_long_e > 0)
 	{
-		cd_sort(array, size, temp, my_long_e);
+		cod_sort(array, size, temp, my_long_e);
 		print_array(array, size);
 		my_long_e *= 10;
 	}
