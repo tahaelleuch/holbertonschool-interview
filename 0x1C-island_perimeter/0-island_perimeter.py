@@ -1,8 +1,9 @@
 #!/usr/bin/python3
+"""island perimeter module"""
 
 
 def island_perimeter(grid):
-    """island result"""
+    """island perimeter"""
 
     result = 0
     x = len(grid)
